@@ -227,7 +227,7 @@ footer a:hover{
     display: none;
 }
 .d-block{
-    display:block;
+    display:block !important;
 }
 .d-mod{
     flex-direction: column;
@@ -237,7 +237,9 @@ footer a:hover{
     right: 4%;
     top: 4%;
 }
-
+#toggle{
+    display: none;
+}
 /* responsive */
 @media (max-width:1080px){
     .testimonials .d-flex{
@@ -254,6 +256,23 @@ footer a:hover{
     }
     .col-4 {
         width: 100%;
+    }
+    .logo{
+        display: none;
+        text-align: left;
+        padding-top: 2rem;
+    }
+    .logo h1{
+        font-size: 2rem;
+    }
+    .logo h1 span{
+        font-size: 1rem;
+    }
+    header nav{
+        display: none;
+    }
+    #toggle{
+        display: block !important;
     }
     
 }
