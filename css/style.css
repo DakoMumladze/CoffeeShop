@@ -50,6 +50,7 @@
 header{
     background:url(../img/header.jpg);
     background-attachment: fixed;
+    position: relative;
 }
 .overlay{
     background:rgba(0,0,0,.5);
@@ -60,6 +61,7 @@ header{
     border-bottom:1px solid #fff;
     padding-top:.9rem;
     padding-bottom: .9rem;
+    align-items: center;
 }
 .logo h1{
     font-size: 5rem;
@@ -72,7 +74,7 @@ header{
 header li{
     padding: .5rem .7rem;
 }
-header li:last-child{
+#specItem{
     border:1px solid #fff;
 }
 header a{
@@ -90,7 +92,7 @@ header li a:after{
     opacity: 0;
     transition:.3s;
 }
-header li:last-child a:after{
+#specItem a:after{
     display: none;
 }
 header li a:hover{
@@ -204,6 +206,38 @@ footer h4{
 footer a:hover{
     color:#2E839E;
 }
+/* responsive menu */
+#toggle{
+    font-weight: 400;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    width: 4rem;
+    height: 2.3rem;
+    font-size: 1.2rem;
+    border: 1px solid #fff;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display:block;
+}
+.d-mod{
+    flex-direction: column;
+}
+.text-right{
+    position: absolute;
+    right: 4%;
+    top: 4%;
+}
+
 /* responsive */
 @media (max-width:1080px){
     .testimonials .d-flex{

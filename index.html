@@ -15,13 +15,18 @@
     <header class="fluid background">
         <div class="overlay">
         <div class="container">
-            <div class="logo text-center mb-1">
+            <div class="btn text-right" id="btnWrap">
+                <button id="toggle">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+            </div>           
+            <div class="logo text-center mb-1 d-none" id="logo">
                 <a href="#">
                     <h1 class="lusitana">Cafe <span class="uppercase">Theme</span></h1>
                 </a>
             </div>
-            <nav class="asap">
-                <ul class="d-flex border">
+            <nav class="asap d-none" id="navigation">
+                <ul class="d-flex border d-mod">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Testimonials</a></li>
                     <li><a href="#">Dishes</a></li>
@@ -29,7 +34,7 @@
                     <li><a href="#">News</a></li>
                     <li><a href="#">Events</a></li>
                     <li><a href="#">Contacts</a></li>
-                    <li class="border-radius"><a href="#">Reserve</a></li>
+                    <li class="border-radius" id="specItem"><a href="#">Reserve</a></li>
                 </ul>
             </nav>
             <div class="header_text">
@@ -95,5 +100,6 @@
             <p>All rights reserved</p>
         </div>
     </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
