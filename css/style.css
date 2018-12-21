@@ -1,6 +1,7 @@
 *{
     text-decoration: none;
 }
+
 /* general classes */
 .container{
     width:80%;
@@ -258,7 +259,6 @@ footer a:hover{
         width: 100%;
     }
     .logo{
-        display: none;
         text-align: left;
         padding-top: 2rem;
     }
@@ -274,5 +274,7 @@ footer a:hover{
     #toggle{
         display: block !important;
     }
-    
+    .testimonials h2{
+        font-size: 2.5rem;
+    }
 }
