@@ -207,6 +207,35 @@ footer h4{
 footer a:hover{
     color:#2E839E;
 }
+/* animation styles */
+.box{
+    background:#2E839E;
+    opacity: .6;
+    animation: paralax 3s infinite;
+    border-radius: 50%;
+    position: absolute;
+}
+.md{
+    width: 50px;
+    height: 50px;
+    background: rebeccapurple;
+    top: 48%;
+    left: 23%;
+}
+.sm{
+    width: 35px;
+    height: 35px;
+    top: 5%;
+    right: 40%;
+}
+@keyframes paralax{
+    0%{opacity: .3;}
+    20%{opacity: .5;}
+    50%{opacity: .7;}
+    80%{opacity: .8;}
+    90%{opacity: .9;}
+    100%{opacity: 1;}
+}
 /* responsive menu */
 #toggle{
     font-weight: 400;
@@ -276,5 +305,8 @@ footer a:hover{
     }
     .testimonials h2{
         font-size: 2.5rem;
+    }
+    .box{
+        display: none;
     }
 }
