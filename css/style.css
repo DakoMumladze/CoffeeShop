@@ -211,7 +211,7 @@ footer a:hover{
 .box{
     background:#2E839E;
     opacity: .6;
-    animation: paralax 3s infinite;
+    animation: twinkle 3s infinite;
     border-radius: 50%;
     position: absolute;
 }
@@ -228,7 +228,7 @@ footer a:hover{
     top: 5%;
     right: 40%;
 }
-@keyframes paralax{
+@keyframes twinkle{
     0%{opacity: .3;}
     20%{opacity: .5;}
     50%{opacity: .7;}
